@@ -11,6 +11,13 @@
 		EC2F98EB2C3DD37C00A666D5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2F98EA2C3DD37C00A666D5 /* ContentView.swift */; };
 		EC2F98ED2C3DD37D00A666D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC2F98EC2C3DD37D00A666D5 /* Assets.xcassets */; };
 		EC2F98F02C3DD37D00A666D5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC2F98EF2C3DD37D00A666D5 /* Preview Assets.xcassets */; };
+		EC2F98FC2C3DD4CD00A666D5 /* SUINavigation in Frameworks */ = {isa = PBXBuildFile; productRef = EC2F98FB2C3DD4CD00A666D5 /* SUINavigation */; };
+		EC2F99042C3DD88300A666D5 /* SetupTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2F99032C3DD88300A666D5 /* SetupTabBar.swift */; };
+		EC2F99062C3DD8D200A666D5 /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2F99052C3DD8D200A666D5 /* TabItem.swift */; };
+		ECFBDEB52C3DE6AD00E4C1F8 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFBDEB42C3DE6AD00E4C1F8 /* FirstView.swift */; };
+		ECFBDEB72C3DE6C900E4C1F8 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFBDEB62C3DE6C900E4C1F8 /* SecondView.swift */; };
+		ECFBDEB92C3DE73600E4C1F8 /* SomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFBDEB82C3DE73600E4C1F8 /* SomeView.swift */; };
+		ECFBDEBB2C3DE7A300E4C1F8 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFBDEBA2C3DE7A300E4C1F8 /* RootView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,12 @@
 		EC2F98EA2C3DD37C00A666D5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EC2F98EC2C3DD37D00A666D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC2F98EF2C3DD37D00A666D5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EC2F99032C3DD88300A666D5 /* SetupTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupTabBar.swift; sourceTree = "<group>"; };
+		EC2F99052C3DD8D200A666D5 /* TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
+		ECFBDEB42C3DE6AD00E4C1F8 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
+		ECFBDEB62C3DE6C900E4C1F8 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
+		ECFBDEB82C3DE73600E4C1F8 /* SomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeView.swift; sourceTree = "<group>"; };
+		ECFBDEBA2C3DE7A300E4C1F8 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC2F98FC2C3DD4CD00A666D5 /* SUINavigation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +65,7 @@
 		EC2F98E72C3DD37C00A666D5 /* SUINavigationTest */ = {
 			isa = PBXGroup;
 			children = (
+				EC2F98F62C3DD47E00A666D5 /* Modules */,
 				EC2F98E82C3DD37C00A666D5 /* SUINavigationTestApp.swift */,
 				EC2F98EA2C3DD37C00A666D5 /* ContentView.swift */,
 				EC2F98EC2C3DD37D00A666D5 /* Assets.xcassets */,
@@ -65,6 +80,43 @@
 				EC2F98EF2C3DD37D00A666D5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EC2F98F62C3DD47E00A666D5 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				EC2F99022C3DD86A00A666D5 /* TabBar */,
+				EC2F98FE2C3DD53600A666D5 /* Models */,
+				EC2F98FD2C3DD53300A666D5 /* Views */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		EC2F98FD2C3DD53300A666D5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ECFBDEB42C3DE6AD00E4C1F8 /* FirstView.swift */,
+				ECFBDEB62C3DE6C900E4C1F8 /* SecondView.swift */,
+				ECFBDEB82C3DE73600E4C1F8 /* SomeView.swift */,
+				ECFBDEBA2C3DE7A300E4C1F8 /* RootView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EC2F98FE2C3DD53600A666D5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EC2F99022C3DD86A00A666D5 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				EC2F99032C3DD88300A666D5 /* SetupTabBar.swift */,
+				EC2F99052C3DD8D200A666D5 /* TabItem.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +135,9 @@
 			dependencies = (
 			);
 			name = SUINavigationTest;
+			packageProductDependencies = (
+				EC2F98FB2C3DD4CD00A666D5 /* SUINavigation */,
+			);
 			productName = SUINavigationTest;
 			productReference = EC2F98E52C3DD37C00A666D5 /* SUINavigationTest.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +166,9 @@
 				Base,
 			);
 			mainGroup = EC2F98DC2C3DD37C00A666D5;
+			packageReferences = (
+				EC2F98FA2C3DD4CD00A666D5 /* XCRemoteSwiftPackageReference "SUINavigation" */,
+			);
 			productRefGroup = EC2F98E62C3DD37C00A666D5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +195,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC2F99042C3DD88300A666D5 /* SetupTabBar.swift in Sources */,
+				EC2F99062C3DD8D200A666D5 /* TabItem.swift in Sources */,
 				EC2F98EB2C3DD37C00A666D5 /* ContentView.swift in Sources */,
+				ECFBDEB72C3DE6C900E4C1F8 /* SecondView.swift in Sources */,
+				ECFBDEBB2C3DE7A300E4C1F8 /* RootView.swift in Sources */,
 				EC2F98E92C3DD37C00A666D5 /* SUINavigationTestApp.swift in Sources */,
+				ECFBDEB92C3DE73600E4C1F8 /* SomeView.swift in Sources */,
+				ECFBDEB52C3DE6AD00E4C1F8 /* FirstView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +344,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -287,9 +352,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.raynelz.SUINavigationTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -309,6 +378,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,9 +386,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.raynelz.SUINavigationTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -344,6 +418,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EC2F98FA2C3DD4CD00A666D5 /* XCRemoteSwiftPackageReference "SUINavigation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ozontech/SUINavigation";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.9.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EC2F98FB2C3DD4CD00A666D5 /* SUINavigation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC2F98FA2C3DD4CD00A666D5 /* XCRemoteSwiftPackageReference "SUINavigation" */;
+			productName = SUINavigation;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EC2F98DD2C3DD37C00A666D5 /* Project object */;
 }

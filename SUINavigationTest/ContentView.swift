@@ -8,17 +8,33 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
-    }
+
+	@StateObject var firstCoordinator = FirstCoordinator<FirstViewModel, SecondViewModel>(firstViewModel: FirstViewModel())
+	   @StateObject var secondCoordinator = SecondCoordinator(secondViewModel: SecondViewModel(value: 0))
+
+	var body: some View {
+		let _ = Self._printChanges()
+
+		contentView
+			.tint(.white)
+	}
+
+	private var contentView: some View {
+		TabView {
+			ForEach(TabItem.allCases, id: \.self) { tab in
+				tabItemView(for: tab)
+					.tabItem {
+						VStack(spacing: 8) {
+							tab.icon
+							Text(tab.title)
+						}
+						.font(.title)
+					}
+			}
+		}
+	}
 }
 
 #Preview {
-    ContentView()
+	ContentView()
 }
